@@ -1,7 +1,7 @@
 # study-app
 study with me 
 
-Fire Base,Android Studio
+Fire Base,Android Studio 2021.3.1 patch 1
 
 ![image](https://github.com/player283/study-app/assets/109062002/5c582399-35c5-4bea-a087-85a61e7bb4b5)
 
