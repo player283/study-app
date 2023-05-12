@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".market.SellListAddActivity"
+    android:background="#66FAF0D7">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/no3"
+        android:text="상품등록"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <View
+        android:id="@+id/toolLine"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#50000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/btnRegPImg"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:padding="20dp"
+            android:autofillHints="사진을 입력해주세요"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_menu_gallery"/>
+
+        <Button
+            android:id="@+id/btnPutImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사진등록"
+            android:textSize="18sp"
+            android:fontFamily="@font/no3"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:background="@color/test"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edPName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:hint="상품명"
+        android:fontFamily="@font/no3"
+        android:textColor="#50000000" />
+
+    <EditText
+        android:id="@+id/edPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:padding="5dp"
+        android:hint="가격"
+        android:fontFamily="@font/no3"
+        android:textColor="#50000000"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edDes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:fontFamily="@font/no3"
+        android:hint="책의 보관 상태를 작성해주세요"
+        android:textColor="#50000000" />
+
+    <Button
+        android:id="@+id/sellUpdatebtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상품 올리기"
+        android:textStyle="bold"
+        android:fontFamily="@font/no3"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:background="@color/test"/>
+
+</LinearLayout>

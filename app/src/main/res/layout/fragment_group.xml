@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#66FAF0D7"
+    android:orientation="vertical"
+    tools:context=".fragment.GroupFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_grouplist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#66FAF0D7">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Study Group"
+            android:fontFamily="@font/no4"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/toolLine"
+        android:layout_marginTop="55dp"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#50000000" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupList_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66FAF0D7"
+        android:layout_below="@id/toolbar_grouplist"
+        android:fontFamily="@font/no4"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnReg_grouplist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@android:drawable/ic_input_add"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/main" />
+
+</RelativeLayout>

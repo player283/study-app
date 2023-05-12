@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#66FAF0D7">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/tran"/>
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wearehere"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="0dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_black"
+            android:text="To  English"
+            android:textColor="@color/blue"
+            android:layout_marginRight="30dp"
+            android:id="@+id/kr_entran"
+            android:fontFamily="@font/no4"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_black"
+            android:text="To  Korean"
+            android:id="@+id/en_krtran"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/no4"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/timecheck"
+        android:layout_marginTop="-10dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_black"
+        android:layout_gravity="center"
+        android:text="Timer"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:fontFamily="@font/no4"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/dictation"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_black"
+        android:layout_gravity="center"
+        android:text="음성 인식"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:fontFamily="@font/no3"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/wordpass"
+        android:layout_marginTop="5dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_black"
+        android:layout_gravity="center"
+        android:text="단 어 장"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:fontFamily="@font/no3"
+        android:textStyle="bold"/>
+
+</LinearLayout>

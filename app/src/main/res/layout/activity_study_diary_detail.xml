@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/diaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="제목을 입력하세요."
+            android:textColor="#619cd6"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/no3"/>
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:text="현재 날짜"
+            android:textSize="16sp"
+            android:fontFamily="@font/no3"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/picture1"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <Button
+                android:id="@+id/btnGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:backgroundTint="@color/test"
+                android:text="사진첨부"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:fontFamily="@font/no3"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/diaryContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edge"
+            android:fontFamily="@font/no3"
+            android:hint="내용을 입력하세요."
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+               android:background="@drawable/btn_black"
+                android:fontFamily="@font/no3"
+                android:text="저장"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+</LinearLayout>
